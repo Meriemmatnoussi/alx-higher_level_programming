@@ -1,0 +1,4 @@
+#!/bin/bash
+
+py_file=$PYFILE
+python3 "$py_file"
