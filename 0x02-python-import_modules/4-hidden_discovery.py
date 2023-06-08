@@ -6,3 +6,4 @@ if __name__ == "__main__":
     save_names = sorted(checkid)
     for checkid in save_names:
         if not checkid.startswith('__'):
+              print(checkid)
