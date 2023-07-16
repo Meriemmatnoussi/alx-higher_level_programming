@@ -96,3 +96,18 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(name))
         elif (name == "x" or name == "y") and value < 0:
             raise ValueError("{} must be >= 0".format(name))
+
+    def area(self):
+        '''
+        returns the area of the Rectangle Class
+        '''
+        return self.height * self.width
+
+    def display(self):
+        '''
+        prints in stdout the Rectangle instance with the character #
+        '''
+        print("\n" * self.y, end="")
+        for i in range(self.height):
+            print(" " * self.x, end="")
+            print("#" * self.width)
