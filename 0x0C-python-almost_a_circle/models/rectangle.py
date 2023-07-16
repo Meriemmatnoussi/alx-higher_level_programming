@@ -137,4 +137,11 @@ class Rectangle(Base):
             except IndexError:
                 pass
 
- 
+   def to_dictionary(self):
+        '''
+            return a dictionary representation of a Rectangle
+        '''
+        dic = {}
+        for i in ["id", "width", "height", "x", "y"]:
+            dic[i] = getattr(self, i)
+        return dic 
