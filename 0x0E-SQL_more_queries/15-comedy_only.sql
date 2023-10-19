@@ -1,4 +1,4 @@
--- 
+-- The tv_genres table contains only one record where name = Comedy (but the id can be different)
 SELECT tvs.title
 FROM tv_show_genres AS tvsg
 JOIN tv_shows AS tvs
