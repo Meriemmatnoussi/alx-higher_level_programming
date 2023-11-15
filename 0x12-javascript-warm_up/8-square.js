@@ -1,4 +1,5 @@
-t prc = process.argv;
+#!/usr/bin/node
+const prc = process.argv;
 
 if (!isNaN(prc[2])) {
   funcy(prc);
